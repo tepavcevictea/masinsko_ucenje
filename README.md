@@ -81,6 +81,10 @@ Epoch 10/10 - Loss: 1.2315, Accuracy: 0.4486, Validation Loss: 1.1664, Validatio
 
 **Tacnost na test skupu sa MaxPooling2D  slojevima:  0.20304568111896515**
 
+Sa 100 slojeva 
+
+**Tacnost na test skupu sa MaxPooling2D  slojevima: 0.3401015102863312**
+
 # Dropout
 
 Epoch 1/10 loss: 1.3698 - accuracy: 0.3410 - val_loss: 1.1762 - val_accuracy: 0.4617 
