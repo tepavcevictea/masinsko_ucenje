@@ -42,16 +42,16 @@ Epoch 9/10 - Loss: 0.7973, Accuracy: 0.6551, Validation Loss: 0.6411, Validation
 Epoch 10/10 - Loss: 0.7477, Accuracy: 0.6777, Validation Loss: 0.7673, Validation Accuracy: 0.6899
 
 
- <font color="red">Tacnost na test skupu sa Konvolutivnim slojevima: 0.3807106614112854</font>
+**Tacnost na test skupu sa Konvolutivnim slojevima: 0.3807106614112854**
 
 Sa 50 epoha
 
- <font color="red">Tacnost na test skupu sa Konvolutivnim slojevima: 0.5025380849838257</font>
+**Tacnost na test skupu sa Konvolutivnim slojevima: 0.5025380849838257**
 
 
 Sa 100 epoha 
 
- <font color="red"> Tacnost na test skupu sa Konvolutivnim slojevima: 0.6497461795806885 </font>
+**Tacnost na test skupu sa Konvolutivnim slojevima: 0.6497461795806885**
 
 
 # Slojevi agregacije
@@ -77,7 +77,7 @@ Epoch 9/10 - Loss: 1.2317, Accuracy: 0.4495, Validation Loss: 1.2203, Validation
 Epoch 10/10 - Loss: 1.2315, Accuracy: 0.4486, Validation Loss: 1.1664, Validation Accuracy: 0.4826
 
 
-<font color="red">Tacnost na test skupu sa MaxPooling2D  slojevima:  0.20304568111896515</font>
+**Tacnost na test skupu sa MaxPooling2D  slojevima:  0.20304568111896515**
 
 # Dropout
 
@@ -101,4 +101,4 @@ Epoch 9/10 loss: 0.8695 - accuracy: 0.6206 - val_loss: 0.6940 - val_accuracy: 0.
 
 Epoch 10/10 loss: 0.8407 - accuracy: 0.6341 - val_loss: 0.7031 - val_accuracy: 0.7073 
 
- <font color="red">Tacnost na test skupu sa Dropout-om:: 0.32487308979034424</font>
+**Tacnost na test skupu sa Dropout-om:: 0.32487308979034424**
