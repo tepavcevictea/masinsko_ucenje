@@ -3,13 +3,13 @@ Kaggle dataset: https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classi
 
 # Uvod i cilj projekta
 
-U oblasti mašinskog učenja, posebno u vezi sa computer vision-om, konvolutivne neuronske mreže (CNN) predstavljaju ključnu tehnologiju koja omogućava efikasnu obradu slika i prepoznavanje oblika. 
-U ovom projektu testirane su razlicite arhitekture konvolutivnih neuronskih mreza kako bi se napravila klasifikacija MRI slika mozga u cilju prepoznavanja tri vrste tumora mozga kao I prepoznavanje da li je tumor mozga detektovan na slici. Koriscen je skup podataka pod imenom “Brain Tumor Classification (MRI)”.
+U oblasti mašinskog učenja, posebno u vezi sa oblačem računarstva, konvolutivne neuronske mreže (CNN) predstavljaju ključnu tehnologiju koja omogućava efikasnu obradu slika i prepoznavanje oblika.
+U ovom projektu testirane su različite arhitekture konvolutivnih neuronskih mreža kako bi se napravila klasifikacija MRI slika mozga u cilju prepoznavanja tri vrste tumora mozga, kao i prepoznavanje da li je tumor mozga detektovan na slici. Korišćen je skup podataka pod imenom "Brain Tumor Classification (MRI)".
 
 # Rezultati CNN modela
 
-U nasatvku su prikazani rezultati CNN modela sa razlicitim tehnikama regularizacije, 
-Konstruisana su tri modela sa razlicitim tehnikama regularizacije:
+U nastavku su prikazani rezultati CNN modela sa različitim tehnikama regularizacije. 
+Konstruisana su tri modela sa različitim tehnikama regularizacije:
 
     1. Model sa konvolutivnim slojevima
     
@@ -20,7 +20,9 @@ Konstruisana su tri modela sa razlicitim tehnikama regularizacije:
 # Konvolutivni slojevi
 
 Kreiran je CNN model od nuie sa konvolutivnim slojevima:
+
 Sa 10 epoha:
+
 Epoch 1/10 - Loss: 1.3511, Accuracy: 0.3624, Validation Loss: 1.1387, Validation Accuracy: 0.5122
 
 Epoch 2/10 - Loss: 1.2081, Accuracy: 0.4499, Validation Loss: 1.0144, Validation Accuracy: 0.6045
