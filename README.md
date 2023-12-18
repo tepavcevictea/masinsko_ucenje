@@ -104,3 +104,35 @@ Epoch 9/10 loss: 0.8695 - accuracy: 0.6206 - val_loss: 0.6940 - val_accuracy: 0.
 Epoch 10/10 loss: 0.8407 - accuracy: 0.6341 - val_loss: 0.7031 - val_accuracy: 0.7073 
 
 **Tacnost na test skupu sa Dropout-om:: 0.32487308979034424**
+
+Sa 100 epoha 
+
+Epoch 100/100
+72/72 [==============================] - 88s 1s/step - loss: 0.3910 - accuracy: 0.8419 - val_loss: 0.2947 - val_accuracy: 0.8746
+13/13 [==============================] - 2s 173ms/step - loss: 4.1719 - accuracy: 0.4619
+
+**Tacnost na test skupu sa Dropout-om: 0.46192893385887146**
+
+# RESNET50
+
+Epoch 1/10 loss: 2.3898 - accuracy: 0.2875 - val_loss: 1.3812 - val_accuracy: 0.3118
+
+Epoch 2/10 loss: 1.3787 - accuracy: 0.2822 - val_loss: 1.3734 - val_accuracy: 0.3118
+
+Epoch 3/10 loss: 1.3824 - accuracy: 0.2936 - val_loss: 1.3667 - val_accuracy: 0.2718
+
+Epoch 4/10 loss: 1.3678 - accuracy: 0.2922 - val_loss: 1.3613 - val_accuracy: 0.2718
+
+Epoch 5/10 loss: 1.3639 - accuracy: 0.2922 - val_loss: 1.3567 - val_accuracy: 0.2718
+
+Epoch 6/10 loss: 1.3608 - accuracy: 0.2922 - val_loss: 1.3532 - val_accuracy: 0.2718
+
+Epoch 7/10 loss: 1.3584 - accuracy: 0.2922 - val_loss: 1.3502 - val_accuracy: 0.2718
+
+Epoch 8/10 loss: 1.3565 - accuracy: 0.2922 - val_loss: 1.3480 - val_accuracy: 0.2718
+
+Epoch 9/10 loss: 1.3551 - accuracy: 0.2922 - val_loss: 1.3462 - val_accuracy: 0.2718
+
+Epoch 10/10 loss: 1.3685 - accuracy: 0.2922 - val_loss: 1.3447 - val_accuracy: 0.2718
+
+**Tacnost na test skupu sa RESNET50: 0.1878172606229782**
