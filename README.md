@@ -51,7 +51,7 @@ Sa 50 epoha
 
 Sa 100 epoha 
 
- <font color="red">Tacnost na test skupu sa Konvolutivnim slojevima: 0.6497461795806885</font>
+ <font color="red"> Tacnost na test skupu sa Konvolutivnim slojevima: 0.6497461795806885 </font>
 
 
 # Slojevi agregacije
