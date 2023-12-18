@@ -49,38 +49,54 @@ Sa 50 epoha
 Tacnost na test skupu sa Konvolutivnim slojevima: 0.5025380849838257
 
 Sa 100 epoha 
-Epoch 100/100
-72/72 [==============================] - 89s 1s/step - loss: 0.1981 - accuracy: 0.9229 - val_loss: 0.1944 - val_accuracy: 0.9408
-13/13 [==============================] - 2s 170ms/step - loss: 3.7045 - accuracy: 0.6497
 
 Tacnost na test skupu sa Konvolutivnim slojevima: 0.6497461795806885
 
 # Slojevi agregacije
 
 Epoch 1/10 - Loss: 1.3766, Accuracy: 0.3397, Validation Loss: 1.2214, Validation Accuracy: 0.4965
+
 Epoch 2/10 - Loss: 1.2869, Accuracy: 0.4003, Validation Loss: 1.2033, Validation Accuracy: 0.4582
+
 Epoch 3/10 - Loss: 1.2786, Accuracy: 0.4055, Validation Loss: 1.1569, Validation Accuracy: 0.4983
+
 Epoch 4/10 - Loss: 1.2616, Accuracy: 0.4307, Validation Loss: 1.1628, Validation Accuracy: 0.5174
+
 Epoch 5/10 - Loss: 1.2442, Accuracy: 0.4321, Validation Loss: 1.1868, Validation Accuracy: 0.4895
+
 Epoch 6/10 - Loss: 1.2423, Accuracy: 0.4634, Validation Loss: 1.1063, Validation Accuracy: 0.5261
+
 Epoch 7/10 - Loss: 1.2523, Accuracy: 0.4098, Validation Loss: 1.1189, Validation Accuracy: 0.5192
+
 Epoch 8/10 - Loss: 1.2357, Accuracy: 0.4412, Validation Loss: 1.1503, Validation Accuracy: 0.5226
+
 Epoch 9/10 - Loss: 1.2317, Accuracy: 0.4495, Validation Loss: 1.2203, Validation Accuracy: 0.4216
+
 Epoch 10/10 - Loss: 1.2315, Accuracy: 0.4486, Validation Loss: 1.1664, Validation Accuracy: 0.4826
+
 
 Tacnost na test skupu sa MaxPooling2D  slojevima:  0.20304568111896515
 
 # Dropout
 
 Epoch 1/10 loss: 1.3698 - accuracy: 0.3410 - val_loss: 1.1762 - val_accuracy: 0.4617 
+
 Epoch 2/10 loss: 1.2372 - accuracy: 0.4207 - val_loss: 1.1078 - val_accuracy: 0.5192 
+
 Epoch 3/10 loss: 1.1398 - accuracy: 0.4961 - val_loss: 0.9607 - val_accuracy: 0.5854 
+
 Epoch 4/10 loss: 1.0828 - accuracy: 0.5301 - val_loss: 0.9360 - val_accuracy: 0.6568 
+
 Epoch 5/10 loss: 1.0270 - accuracy: 0.5501 - val_loss: 0.8488 - val_accuracy: 0.6620 
+
 Epoch 6/10 loss: 0.9898 - accuracy: 0.5806 - val_loss: 0.7632 - val_accuracy: 0.6603 
+
 Epoch 7/10 loss: 0.9424 - accuracy: 0.5941 - val_loss: 0.7452 - val_accuracy: 0.6969 
+
 Epoch 8/10 loss: 0.8812 - accuracy: 0.6198 - val_loss: 0.7083 - val_accuracy: 0.6794 
+
 Epoch 9/10 loss: 0.8695 - accuracy: 0.6206 - val_loss: 0.6940 - val_accuracy: 0.7073 
+
 Epoch 10/10 loss: 0.8407 - accuracy: 0.6341 - val_loss: 0.7031 - val_accuracy: 0.7073 
 
 Tacnost na test skupu sa Dropout-om:: 0.32487308979034424
