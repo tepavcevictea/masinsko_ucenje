@@ -1,10 +1,13 @@
 import os
 import cv2
 import numpy as np
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
 
 # Lokacija dataset-a
 dataset_path = "data_set"
@@ -60,7 +63,7 @@ model.add(Dense(len(classes), activation='softmax'))
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 # Treniranje modela
-model.fit(datagen.flow(X_train, y_train, batch_size=32), epochs=100, validation_data=(X_val, y_val))
+model.fit(datagen.flow(X_train, y_train, batch_size=32), epochs=2, validation_data=(X_val, y_val))
 
 # Evaluacija modela na test skupu
 test_data = []
