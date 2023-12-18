@@ -22,15 +22,25 @@ Konstruisana su tri modela sa razlicitim tehnikama regularizacije:
 Kreiran je CNN model od nuie sa konvolutivnim slojevima:
 Sa 10 epoha:
 Epoch 1/10 - Loss: 1.3511, Accuracy: 0.3624, Validation Loss: 1.1387, Validation Accuracy: 0.5122
+
 Epoch 2/10 - Loss: 1.2081, Accuracy: 0.4499, Validation Loss: 1.0144, Validation Accuracy: 0.6045
+
 Epoch 3/10 - Loss: 1.0997, Accuracy: 0.5327, Validation Loss: 0.9994, Validation Accuracy: 0.5627
+
 Epoch 4/10 - Loss: 1.0086, Accuracy: 0.5636, Validation Loss: 1.1056, Validation Accuracy: 0.4948
+
 Epoch 5/10 - Loss: 0.9399, Accuracy: 0.6002, Validation Loss: 0.8188, Validation Accuracy: 0.6725
+
 Epoch 6/10 - Loss: 0.9198, Accuracy: 0.5936, Validation Loss: 0.7861, Validation Accuracy: 0.6882
+
 Epoch 7/10 - Loss: 0.8433, Accuracy: 0.6468, Validation Loss: 0.7514, Validation Accuracy: 0.6760
+
 Epoch 8/10 - Loss: 0.8329, Accuracy: 0.6485, Validation Loss: 0.9195, Validation Accuracy: 0.5958
+
 Epoch 9/10 - Loss: 0.7973, Accuracy: 0.6551, Validation Loss: 0.6411, Validation Accuracy: 0.7317
+
 Epoch 10/10 - Loss: 0.7477, Accuracy: 0.6777, Validation Loss: 0.7673, Validation Accuracy: 0.6899
+
 
 Tacnost na test skupu sa Konvolutivnim slojevima: 0.3807106614112854
 
