@@ -10,8 +10,11 @@ U ovom projektu testirane su razlicite arhitekture konvolutivnih neuronskih mrez
 
 U nasatvku su prikazani rezultati CNN modela sa razlicitim tehnikama regularizacije, 
 Konstruisana su tri modela sa razlicitim tehnikama regularizacije:
+
     1. Model sa konvolutivnim slojevima
+    
     2. Model sa slojevima agregacije
+    
     3. Dropout model
     
 # Konvolutivni slojevi
