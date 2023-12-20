@@ -63,7 +63,7 @@ model.add(Dense(len(classes), activation='softmax'))
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 # Treniranje modela
-model.fit(datagen.flow(X_train, y_train, batch_size=32), epochs=2, validation_data=(X_val, y_val))
+model.fit(datagen.flow(X_train, y_train, batch_size=32), epochs=100, validation_data=(X_val, y_val))
 
 # Evaluacija modela na test skupu
 test_data = []
