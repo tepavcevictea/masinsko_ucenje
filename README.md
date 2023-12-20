@@ -3,12 +3,12 @@ Kaggle dataset: https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classi
 
 # Uvod i cilj projekta
 
-U oblasti mašinskog učenja, posebno u vezi sa oblačem računarstva, konvolutivne neuronske mreže (CNN) predstavljaju ključnu tehnologiju koja omogućava efikasnu obradu slika i prepoznavanje oblika.
+U oblasti mašinskog učenja, posebno u vezi sa computer vision-om, konvolutivne neuronske mreže (CNN) predstavljaju ključnu tehnologiju koja omogućava efikasnu obradu slika i prepoznavanje oblika.
 U ovom projektu testirane su različite arhitekture konvolutivnih neuronskih mreža kako bi se napravila klasifikacija MRI slika mozga u cilju prepoznavanja tri vrste tumora mozga, kao i prepoznavanje da li je tumor mozga detektovan na slici. Korišćen je skup podataka pod imenom "Brain Tumor Classification (MRI)".
 
 # Rezultati CNN modela
 
-U nastavku su prikazani rezultati CNN modela sa različitim tehnikama regularizacije. 
+U nastavku su prikazani rezultati CNN modela sa različitim tehnikama regularizacije kao i pretrenirana konvolutivna mreza RESNET50. 
 Konstruisana su tri modela sa različitim tehnikama regularizacije:
 
     1. Model sa konvolutivnim slojevima
@@ -19,7 +19,7 @@ Konstruisana su tri modela sa različitim tehnikama regularizacije:
     
 # Konvolutivni slojevi
 
-Kreiran je CNN model od nuie sa konvolutivnim slojevima:
+Kreiran je CNN model od nule sa konvolutivnim slojevima:
 
 Sa 10 epoha:
 
@@ -81,7 +81,7 @@ Epoch 10/10 - Loss: 1.2315, Accuracy: 0.4486, Validation Loss: 1.1664, Validatio
 
 **Tacnost na test skupu sa MaxPooling2D  slojevima:  0.20304568111896515**
 
-Sa 100 slojeva 
+Sa 100 epoha
 
 **Tacnost na test skupu sa MaxPooling2D  slojevima: 0.3401015102863312**
 
@@ -112,8 +112,8 @@ Epoch 10/10 loss: 0.8407 - accuracy: 0.6341 - val_loss: 0.7031 - val_accuracy: 0
 Sa 100 epoha 
 
 Epoch 100/100
-72/72 [==============================] - 88s 1s/step - loss: 0.3910 - accuracy: 0.8419 - val_loss: 0.2947 - val_accuracy: 0.8746
-13/13 [==============================] - 2s 173ms/step - loss: 4.1719 - accuracy: 0.4619
+loss: 0.3910 - accuracy: 0.8419 - val_loss: 0.2947 - val_accuracy: 0.8746
+loss: 4.1719 - accuracy: 0.4619
 
 **Tacnost na test skupu sa Dropout-om: 0.46192893385887146**
 
