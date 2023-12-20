@@ -97,4 +97,4 @@ test_labels = np.array(test_labels)
 
 loss, accuracy = model.evaluate(test_data, test_labels)
 
-print(f"Tacnost na test skupu sa Dropout-om: {accuracy}")
+print(f"Tacnost na test skupu sa RESNET50: {accuracy}")
