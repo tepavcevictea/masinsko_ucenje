@@ -43,7 +43,7 @@ def create_model(input_shape, num_classes):
     # Load the pre-trained ResNet model
     resnet_model = ResNet101(weights=None, include_top=False, input_shape=(224, 224, 3))
     
-    # Fine-tuning: Freeze all but the last 10 layers of the model
+    # Previously tried fine tuning, but unfroze all at the end
     for layer in resnet_model.layers:
         layer.trainable = True
     
@@ -104,7 +104,7 @@ def main():
     )
 
     # Create and train the model
-    # When calling create_model
+    # When calling create_modelmarkdown preview en
     model = create_model(IMAGE_SIZE + (1,), len(CLASSES))  # Ensure the input_shape reflects the single channel
 
     ### Evaluate ###
