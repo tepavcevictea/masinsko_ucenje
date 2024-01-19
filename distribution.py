@@ -26,7 +26,7 @@ counts = [class_distribution[cls] for cls in classes]
 plt.figure(figsize=(10, 6))
 plt.bar(classes, counts, color='skyblue')
 
-plt.title('Distribution of Classes in Training Set')
+plt.title('Distribution of Classes in Testing Set')
 plt.xlabel('Class')
 plt.ylabel('Number of Images')
 plt.xticks(rotation=45)  # Rotate class names for better readability if necessary
