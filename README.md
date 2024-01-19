@@ -50,15 +50,15 @@ Nakon treniranja, model se evaluira na test skupu kako bi se dobila tačnost mod
 Na slikama dole prikazani su rezultati modela u 6 odvojenih verzija modela. 
 U verzijama su isprobane : ResNe150 i ResNet101 modeli, pocetne tezine(isprobane su "ImageNet" i "None"), broj zamrznutih slojeva kao i velicine potpuno povezanih slojeva(256, 512, 128...), DropOut sa razlicitim rate-ovima (0.2, 0.3, 0.5) kao i batch normalizacija.
 
-#Run 1
+# Run 1
 ![run1](resnet/run1/results_1.png)
-#Run 2
+# Run 2
 ![run2](resnet/run2/results_2.png)
-#Run 3
+# Run 3
 ![run3](resnet/run3/results_3.png)
-#Run 4
+# Run 4
 ![run4](resnet/run4/results_4.png)
-#Run 5
+# Run 5
 ![run5](resnet/run5/result_5.png)
-#Run 6
+# Run 6
 ![run6](resnet/run6/results_6.png)
