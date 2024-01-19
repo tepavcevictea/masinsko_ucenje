@@ -34,10 +34,10 @@ val_predicted_labels = np.argmax(val_predictions, axis=1)
 
 y_val = np.loadtxt("validation_actual.csv", delimiter=",")
 
-# Calculate the confusion matrix
+# confusion matrix
 conf_matrix = confusion_matrix(y_val, val_predicted_labels)
 
-# Plot the confusion matrix
+# Plot confusion matrix
 plt.figure(figsize=(10, 8))
 sns.heatmap(conf_matrix, annot=True, fmt='d', cmap=plt.cm.Blues, xticklabels=classes, yticklabels=classes)
 plt.title('Confusion Matrix')
@@ -45,7 +45,7 @@ plt.xlabel('Predicted Labels')
 plt.ylabel('True Labels')
 plt.show()
 
-# Print the classification report
+# classification report
 report = classification_report(y_val, val_predicted_labels, target_names=classes)
 print(report)
 

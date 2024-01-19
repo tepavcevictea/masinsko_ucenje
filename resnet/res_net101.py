@@ -29,10 +29,10 @@ def load_images_and_labels(dataset_path, train_test, classes):
         for filename in os.listdir(class_path):
             try:
                 img_path = os.path.join(class_path, filename)
-                img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)  # Load as grayscale
+                img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE) # Učitavanje as grayscale
                 img = cv2.resize(img, IMAGE_SIZE)
-                img = np.expand_dims(img, axis=-1)  # Add channel dimension
-                img = img / 255.0  # Normalize pixel values
+                img = np.expand_dims(img, axis=-1)  # Dodavanje dimenzije kanala
+                img = img / 255.0  # Normalizacija vrednosti piksela
                 data.append(img)
                 labels.append(classes.index(class_name))
             except Exception as e:
@@ -43,13 +43,13 @@ def create_model(input_shape, num_classes):
     # Load the pre-trained ResNet model
     resnet_model = ResNet101(weights=None, include_top=False, input_shape=(224, 224, 3))
     
-    # Previously tried fine tuning, but unfroze all at the end
+    # Prethodno je pokušano sa fine-tuning-om, ali su svi slojevi odmrznuti na kraju
     for layer in resnet_model.layers:
         layer.trainable = True
     
-    # Create a new sequential model
+    # Kreiranje novog sekvencijalnog modela
     model = Sequential([
-        # Replicate the grayscale channel to 3 channels
+        # Repliciranje sivog kanala u 3 kanala
         Lambda(lambda x: tf.repeat(x, repeats=3, axis=-1), input_shape=input_shape),
         resnet_model,
         GlobalAveragePooling2D(),
@@ -69,24 +69,26 @@ def create_model(input_shape, num_classes):
 
     optimizer = Adam(learning_rate=lr_schedule)
 
-    # Compile the model
+    # Kompajliranje modela
     model.compile(optimizer=optimizer, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
     return model
 
 
 def main():
-    # Load images and labels
+    # Učitavanje slika i labela   
+
     data, labels = load_images_and_labels(DATASET_PATH, TRAIN, CLASSES)
     
-    # Split data into training and validation sets
+    # Podela podataka na trening i validacioni skup
     X_train, X_val, y_train, y_val = train_test_split(data, labels, test_size=0.2, random_state=42)
     
-    # Data augmentation
+    # Augmentacija podataka
     datagen = ImageDataGenerator(
         rotation_range=20,
         width_shift_range=0.2,
         height_shift_range=0.2,
-        shear_range=0.2,
+        shear_range=0.2,    
+
         zoom_range=0.2,
         horizontal_flip=True,
         fill_mode="nearest"
@@ -94,28 +96,28 @@ def main():
 
     checkpoint_callback = ModelCheckpoint(
         filepath="run6/weights/weights_epoch_{epoch:02d}_val_accuracy_{val_accuracy:.4f}.h5",
-        monitor='val_accuracy',  # Monitor the validation accuracy
+        monitor='val_accuracy',  # Praćenje tačnosti na validacionom skupu
         verbose=1,
-        save_best_only=True,  # Save only the best model based on validation accuracy
+        save_best_only=True,  # Čuvanje samo najboljeg modela na osnovu tačnosti na validacionom skupu
         save_weights_only=True,
-        mode='max',  # 'max' mode means the callback will look for the maximum value of the monitored metric
+        mode='max',   
         save_freq='epoch'
-        # Note: 'period' parameter is not needed for TensorFlow 2.0 and above
+       
     )
 
-    # Create and train the model
-    # When calling create_modelmarkdown preview en
+    # Kreiranje i treniranje modela
+    
     model = create_model(IMAGE_SIZE + (1,), len(CLASSES))  # Ensure the input_shape reflects the single channel
 
-    ### Evaluate ###
+    ### Evaluacija ###
     model.load_weights("run5_weights_epoch_87_val_accuracy_0.8519.h5")
 
-    ### Train ###
+    ### Treniranje ###
     # data = model.fit(datagen.flow(X_train, y_train, batch_size=16), epochs=120, validation_data=(X_val, y_val), callbacks=[checkpoint_callback])
     # hist_df = pd.DataFrame(data.history)
     # hist_df.to_excel("run6/training_metrics.xlsx")
     
-    # Evaluate the model on the test set
+    # Evaluacija modela na test skupu
     test_data , test_labels = load_images_and_labels(DATASET_PATH, TEST, CLASSES)
 
     loss, accuracy = model.evaluate(test_data, test_labels)

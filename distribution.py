@@ -7,30 +7,30 @@ root_dir = 'data_set/Testing'
 # Initialize a dictionary to hold the count of images in each class
 class_distribution = {}
 
-# Walk through the subdirectories and count images
+# Iteracija kroz poddirektorijume i brojanje slika
 for subdir in os.listdir(root_dir):
     if os.path.isdir(os.path.join(root_dir, subdir)):  # Check if it's a directory
         class_images = os.listdir(os.path.join(root_dir, subdir))
-        # Filter out files that are not images (if necessary, adjust the extensions)
+         # Filtriranje fajlova koji nisu slike (po potrebi, prilagoditi ekstenzije)
         class_images = [img for img in class_images if img.lower().endswith(('.png', '.jpg', '.jpeg'))]
         class_distribution[subdir] = len(class_images)
 
-# class_distribution now holds the number of images per class
-# Names of classes
+# class_distribution sada sadrži broj slika po klasi
+# Imena klasa
 classes = list(class_distribution.keys())
 
-# Corresponding counts
+# Odgovarajući brojevi
 counts = [class_distribution[cls] for cls in classes]
 
-# Create a bar plot
+# Kreiranje bar dijagrama
 plt.figure(figsize=(10, 6))
 plt.bar(classes, counts, color='skyblue')
 
 plt.title('Distribution of Classes in Testing Set')
 plt.xlabel('Class')
 plt.ylabel('Number of Images')
-plt.xticks(rotation=45)  # Rotate class names for better readability if necessary
+plt.xticks(rotation=45) # Rotiranje imena klasa radi bolje čitljivosti ako je potrebno
 
-# Show the plot
+
 plt.tight_layout()  # Adjust layout for better fit
 plt.show()
