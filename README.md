@@ -1,5 +1,6 @@
 # masinsko_ucenje
 Kaggle dataset: https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri/
+**Glavni kod se nalazi u folderu resnet**
 
 # Uvod i cilj projekta
 
