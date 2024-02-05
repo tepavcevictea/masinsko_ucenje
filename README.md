@@ -18,14 +18,14 @@ U projektu korišćena je baza podataka pod imenom "Brain Tumor Classification (
 
 Slike u data-set-u su različitih velicina pa je bilo potrebno uraditi resizing kako bi sve bile istih dimenzija. Na slici je prikazana raspodela veličina slika iz data-set-a: 
 
-![Scatter Plot](Image_size_scatter.png)
+![Scatter Plot](slike/Image_size_scatter.png)
 
 # Training i Test skup
 
 Podela na training i test skup je izvršena sa razmerom 1/5 (training = 80%, test = 20%). Na slikama dole je prikazana raspodela training i test skupa po klasama.
 
-![Distribucija klasa u training skupu](training_class_distribution.png)
-![Distribucija klasa u test skupu](testing_class_distribution.png)
+![Distribucija klasa u training skupu](slike/training_class_distribution.png)
+![Distribucija klasa u test skupu](slike/testing_class_distribution.png)
 
 
 
@@ -53,14 +53,12 @@ Na slikama dole prikazani su rezultati modela u 6 odvojenih verzija modela.
 U verzijama su isprobane : ResNe150 i ResNet101 modeli, pocetne tezine(isprobane su "ImageNet" i "None"), broj zamrznutih slojeva kao i velicine potpuno povezanih slojeva(256, 512, 128...), DropOut sa razlicitim rate-ovima (0.2, 0.3, 0.5) kao i batch normalizacija.
 
 # Run 1
-![run1](resnet/run1/results_1.png)
+![run2](slike/run1.png)
 # Run 2
-![run2](resnet/run2/results_2.png)
-# Run 3
-![run3](resnet/run3/results_3.png)
+![run2](slike/run2.png)
 # Run 4
-![run4](resnet/run4/results_4.png)
+![run4](slike/run3.png)
 # Run 5
-![run5](resnet/run5/result_5.png)
+![run5](slike/run5.png)
 # Run 6
-![run6](resnet/run6/results_6.png)
+![run6](slike/run6.png)
