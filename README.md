@@ -143,7 +143,7 @@ Model je evaluiran na zasebnom test setu, a rezultati su prikazani kroz classifi
 
 # Rezultati
 
-Rezultati svih modela su prikazani u tabeli, poredjani od najboljeg ka najgorem:
+Rezultati svih modela su prikazani u tabeli, poredjani od najboljeg ka najgorem po kriterijumu tačnosti:
 
 ![Tabela sa rezultatima](slike/combined_model_results.png)
 
