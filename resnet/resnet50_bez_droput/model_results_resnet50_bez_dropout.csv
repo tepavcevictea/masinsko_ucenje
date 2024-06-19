@@ -1,0 +1,2 @@
+Model,Train Loss,Train Accuracy,Validation Loss,Validation Accuracy,Test Loss,Test Accuracy
+ResNet50 - Bez dropout,0.9556581974029541,0.5770906209945679,0.947497546672821,0.5714285969734192,2.0960187911987305,0.4314720928668976
