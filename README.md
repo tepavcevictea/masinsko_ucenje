@@ -104,7 +104,7 @@ Isprobani su ResNet 50 i ResNet 101 modeli, sa različitim modifikacijama u arhi
 
 -**Broj epoha** : 20
 
-# Resnet 50 bez Dropout-a
+## Resnet 50 bez Dropout-a
 
 -**Arhitektura** AveragePooling
 
@@ -112,7 +112,7 @@ Isprobani su ResNet 50 i ResNet 101 modeli, sa različitim modifikacijama u arhi
 
 -**Broj epoha** : 10
 
-# Resenet 50, 40 epoha
+## Resenet 50, 40 epoha
 
 -**Arhitektura** AveragePooling
 
@@ -120,7 +120,7 @@ Isprobani su ResNet 50 i ResNet 101 modeli, sa različitim modifikacijama u arhi
 
 -**Broj epoha** : 40
 
-# Resnet 101
+## Resnet 101
 
 -**Arhitektura** AveragePooling, BatchNormalization, Dropout(0,4)
 
@@ -128,7 +128,7 @@ Isprobani su ResNet 50 i ResNet 101 modeli, sa različitim modifikacijama u arhi
 
 -**Broj epoha** : 20
 
-# Resnet 101 bez Dropout-a
+## Resnet 101 bez Dropout-a
 
 -**Arhitektura** AveragePooling
 
