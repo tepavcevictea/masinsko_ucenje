@@ -306,4 +306,3 @@ Greska na trening setu opada ispod 2, što pokazuje da model smanjuje grešku na
 
 
 
-
